@@ -30,6 +30,91 @@ importers:
         specifier: ^4.9.4
         version: 4.9.5
 
+  lib:
+    dependencies:
+      '@asgardeo/auth-spa':
+        specifier: ^3.1.2
+        version: 3.1.2
+    devDependencies:
+      '@babel/cli':
+        specifier: ^7.19.3
+        version: 7.25.7(@babel/core@7.25.8)
+      '@babel/core':
+        specifier: ^7.20.5
+        version: 7.25.8
+      '@babel/plugin-proposal-class-properties':
+        specifier: ^7.18.6
+        version: 7.18.6(@babel/core@7.25.8)
+      '@babel/plugin-proposal-decorators':
+        specifier: ^7.20.5
+        version: 7.25.7(@babel/core@7.25.8)
+      '@babel/plugin-transform-modules-commonjs':
+        specifier: ^7.19.6
+        version: 7.25.7(@babel/core@7.25.8)
+      '@babel/preset-env':
+        specifier: ^7.20.2
+        version: 7.25.8(@babel/core@7.25.8)
+      '@babel/preset-react':
+        specifier: ^7.18.6
+        version: 7.25.7(@babel/core@7.25.8)
+      '@babel/preset-typescript':
+        specifier: ^7.18.6
+        version: 7.25.7(@babel/core@7.25.8)
+      '@babel/runtime-corejs3':
+        specifier: ^7.20.6
+        version: 7.25.7
+      '@types/node':
+        specifier: ^18.11.17
+        version: 18.19.57
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^5.47.0
+        version: 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1)(typescript@4.9.5)
+      '@typescript-eslint/parser':
+        specifier: ^5.47.0
+        version: 5.62.0(eslint@8.57.1)(typescript@4.9.5)
+      babel-loader:
+        specifier: ^9.1.0
+        version: 9.2.1(@babel/core@7.25.8)(webpack@5.95.0)
+      core-js:
+        specifier: ^3.26.1
+        version: 3.38.1
+      eslint:
+        specifier: ^8.30.0
+        version: 8.57.1
+      eslint-plugin-import:
+        specifier: ^2.26.0
+        version: 2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-import-resolver-typescript@2.7.1)(eslint@8.57.1)
+      eslint-plugin-react:
+        specifier: ^7.31.11
+        version: 7.37.1(eslint@8.57.1)
+      eslint-plugin-react-hooks:
+        specifier: ^4.6.0
+        version: 4.6.2(eslint@8.57.1)
+      eslint-webpack-plugin:
+        specifier: ^3.2.0
+        version: 3.2.0(eslint@8.57.1)(webpack@5.95.0)
+      react:
+        specifier: ^18.2.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.3.1(react@18.3.1)
+      rimraf:
+        specifier: ^3.0.2
+        version: 3.0.2
+      typescript:
+        specifier: ^4.9.4
+        version: 4.9.5
+      webpack:
+        specifier: ^5.75.0
+        version: 5.95.0(webpack-cli@5.1.4)
+      webpack-cli:
+        specifier: ^5.0.1
+        version: 5.1.4(webpack@5.95.0)
+      worker-loader:
+        specifier: ^3.0.8
+        version: 3.0.8(webpack@5.95.0)
+
   samples/asgardeo-choreo-react-express:
     devDependencies:
       eslint-config-custom:
@@ -8205,6 +8290,12 @@ packages:
   workbox-window@6.6.0:
     resolution: {integrity: sha512-L4N9+vka17d16geaJXXRjENLFldvkWy7JyGxElRD0JvBxvFEd8LOhr+uXCcar/NzAmIBRv9EZ+M+Qr4mOoBITw==}
 
+  worker-loader@3.0.8:
+    resolution: {integrity: sha512-XQyQkIFeRVC7f7uRhFdNMe/iJOdO6zxAaR3EWbDp45v3mDhrTi+++oswKNxShUNjPC/1xUp5DB29YKLhFo129g==}
+    engines: {node: '>= 10.13.0'}
+    peerDependencies:
+      webpack: ^4.0.0 || ^5.0.0
+
   wrap-ansi@6.2.0:
     resolution: {integrity: sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==}
     engines: {node: '>=8'}
@@ -9555,7 +9646,7 @@ snapshots:
   '@jest/console@27.5.1':
     dependencies:
       '@jest/types': 27.5.1
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       chalk: 4.1.2
       jest-message-util: 27.5.1
       jest-util: 27.5.1
@@ -9564,7 +9655,7 @@ snapshots:
   '@jest/console@28.1.3':
     dependencies:
       '@jest/types': 28.1.3
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       chalk: 4.1.2
       jest-message-util: 28.1.3
       jest-util: 28.1.3
@@ -9577,7 +9668,7 @@ snapshots:
       '@jest/test-result': 27.5.1
       '@jest/transform': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       emittery: 0.8.1
@@ -9611,14 +9702,14 @@ snapshots:
     dependencies:
       '@jest/fake-timers': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       jest-mock: 27.5.1
 
   '@jest/fake-timers@27.5.1':
     dependencies:
       '@jest/types': 27.5.1
       '@sinonjs/fake-timers': 8.1.0
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       jest-message-util: 27.5.1
       jest-mock: 27.5.1
       jest-util: 27.5.1
@@ -9636,7 +9727,7 @@ snapshots:
       '@jest/test-result': 27.5.1
       '@jest/transform': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       chalk: 4.1.2
       collect-v8-coverage: 1.0.2
       exit: 0.1.2
@@ -9720,7 +9811,7 @@ snapshots:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       '@types/yargs': 16.0.9
       chalk: 4.1.2
 
@@ -9729,7 +9820,7 @@ snapshots:
       '@jest/schemas': 28.1.3
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       '@types/yargs': 17.0.33
       chalk: 4.1.2
 
@@ -10598,7 +10689,7 @@ snapshots:
 
   '@types/graceful-fs@4.1.9':
     dependencies:
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
 
   '@types/html-minifier-terser@6.1.0': {}
 
@@ -10713,7 +10804,7 @@ snapshots:
 
   '@types/resolve@1.17.1':
     dependencies:
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
 
   '@types/retry@0.12.0': {}
 
@@ -10937,12 +11028,12 @@ snapshots:
   '@webpack-cli/configtest@2.1.1(webpack-cli@5.1.4)(webpack@5.95.0)':
     dependencies:
       webpack: 5.95.0(webpack-cli@5.1.4)
-      webpack-cli: 5.1.4(webpack-dev-server@4.15.2)(webpack@5.95.0)
+      webpack-cli: 5.1.4(webpack@5.95.0)
 
   '@webpack-cli/info@2.0.2(webpack-cli@5.1.4)(webpack@5.95.0)':
     dependencies:
       webpack: 5.95.0(webpack-cli@5.1.4)
-      webpack-cli: 5.1.4(webpack-dev-server@4.15.2)(webpack@5.95.0)
+      webpack-cli: 5.1.4(webpack@5.95.0)
 
   '@webpack-cli/serve@2.0.5(webpack-cli@5.1.4)(webpack-dev-server@4.15.2)(webpack@5.95.0)':
     dependencies:
@@ -10950,6 +11041,11 @@ snapshots:
       webpack-cli: 5.1.4(webpack-dev-server@4.15.2)(webpack@5.95.0)
     optionalDependencies:
       webpack-dev-server: 4.15.2(webpack-cli@5.1.4)(webpack@5.95.0)
+
+  '@webpack-cli/serve@2.0.5(webpack-cli@5.1.4)(webpack@5.95.0)':
+    dependencies:
+      webpack: 5.95.0(webpack-cli@5.1.4)
+      webpack-cli: 5.1.4(webpack@5.95.0)
 
   '@xtuc/ieee754@1.2.0': {}
 
@@ -14066,7 +14162,7 @@ snapshots:
       '@jest/environment': 27.5.1
       '@jest/test-result': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       chalk: 4.1.2
       co: 4.6.0
       dedent: 0.7.0
@@ -14162,7 +14258,7 @@ snapshots:
       '@jest/environment': 27.5.1
       '@jest/fake-timers': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       jest-mock: 27.5.1
       jest-util: 27.5.1
       jsdom: 16.7.0
@@ -14177,7 +14273,7 @@ snapshots:
       '@jest/environment': 27.5.1
       '@jest/fake-timers': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       jest-mock: 27.5.1
       jest-util: 27.5.1
 
@@ -14187,7 +14283,7 @@ snapshots:
     dependencies:
       '@jest/types': 27.5.1
       '@types/graceful-fs': 4.1.9
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       anymatch: 3.1.3
       fb-watchman: 2.0.2
       graceful-fs: 4.2.11
@@ -14206,7 +14302,7 @@ snapshots:
       '@jest/source-map': 27.5.1
       '@jest/test-result': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       chalk: 4.1.2
       co: 4.6.0
       expect: 27.5.1
@@ -14261,7 +14357,7 @@ snapshots:
   jest-mock@27.5.1:
     dependencies:
       '@jest/types': 27.5.1
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
 
   jest-pnp-resolver@1.2.3(jest-resolve@27.5.1):
     optionalDependencies:
@@ -14299,7 +14395,7 @@ snapshots:
       '@jest/test-result': 27.5.1
       '@jest/transform': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       chalk: 4.1.2
       emittery: 0.8.1
       graceful-fs: 4.2.11
@@ -14350,7 +14446,7 @@ snapshots:
 
   jest-serializer@27.5.1:
     dependencies:
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       graceful-fs: 4.2.11
 
   jest-snapshot@27.5.1:
@@ -14383,7 +14479,7 @@ snapshots:
   jest-util@27.5.1:
     dependencies:
       '@jest/types': 27.5.1
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
@@ -14392,7 +14488,7 @@ snapshots:
   jest-util@28.1.3:
     dependencies:
       '@jest/types': 28.1.3
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
@@ -14422,7 +14518,7 @@ snapshots:
     dependencies:
       '@jest/test-result': 27.5.1
       '@jest/types': 27.5.1
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       jest-util: 27.5.1
@@ -14432,7 +14528,7 @@ snapshots:
     dependencies:
       '@jest/test-result': 28.1.3
       '@jest/types': 28.1.3
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       emittery: 0.10.2
@@ -14441,19 +14537,19 @@ snapshots:
 
   jest-worker@26.6.2:
     dependencies:
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       merge-stream: 2.0.0
       supports-color: 7.2.0
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
   jest-worker@28.1.3:
     dependencies:
-      '@types/node': 16.18.114
+      '@types/node': 18.19.57
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -17808,6 +17904,23 @@ snapshots:
     optionalDependencies:
       webpack-dev-server: 4.15.2(webpack-cli@5.1.4)(webpack@5.95.0)
 
+  webpack-cli@5.1.4(webpack@5.95.0):
+    dependencies:
+      '@discoveryjs/json-ext': 0.5.7
+      '@webpack-cli/configtest': 2.1.1(webpack-cli@5.1.4)(webpack@5.95.0)
+      '@webpack-cli/info': 2.0.2(webpack-cli@5.1.4)(webpack@5.95.0)
+      '@webpack-cli/serve': 2.0.5(webpack-cli@5.1.4)(webpack@5.95.0)
+      colorette: 2.0.20
+      commander: 10.0.1
+      cross-spawn: 7.0.3
+      envinfo: 7.14.0
+      fastest-levenshtein: 1.0.16
+      import-local: 3.2.0
+      interpret: 3.1.1
+      rechoir: 0.8.0
+      webpack: 5.95.0(webpack-cli@5.1.4)
+      webpack-merge: 5.10.0
+
   webpack-dev-middleware@5.3.4(webpack@5.95.0):
     dependencies:
       colorette: 2.0.20
@@ -17908,7 +18021,7 @@ snapshots:
       watchpack: 2.4.2
       webpack-sources: 3.2.3
     optionalDependencies:
-      webpack-cli: 5.1.4(webpack-dev-server@4.15.2)(webpack@5.95.0)
+      webpack-cli: 5.1.4(webpack@5.95.0)
     transitivePeerDependencies:
       - '@swc/core'
       - esbuild
@@ -18151,6 +18264,12 @@ snapshots:
     dependencies:
       '@types/trusted-types': 2.0.7
       workbox-core: 6.6.0
+
+  worker-loader@3.0.8(webpack@5.95.0):
+    dependencies:
+      loader-utils: 2.0.4
+      schema-utils: 3.3.0
+      webpack: 5.95.0(webpack-cli@5.1.4)
 
   wrap-ansi@6.2.0:
     dependencies:
